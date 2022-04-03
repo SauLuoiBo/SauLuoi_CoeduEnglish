@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import * as Sui from "../../components";
-import * as Co from "./components";
 
 export const SupportSection = () => {
   return (
