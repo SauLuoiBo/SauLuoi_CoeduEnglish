@@ -6,9 +6,11 @@ export const SupportSection = () => {
   return (
     <Sui.View.ViewSection title={"Coedu english hỗ trợ gì?"}>
       <Style.Wrapper>
-        <Sui.Card.Course />
-        <Sui.Card.Course />
-        <Sui.Card.Course />
+        <Style.ContentWrapper>
+          <Sui.Card.Support />
+          <Sui.Card.Support />
+          <Sui.Card.Support />
+        </Style.ContentWrapper>
       </Style.Wrapper>
     </Sui.View.ViewSection>
   );
@@ -20,7 +22,7 @@ const Style = {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     column-gap: 30rem;
     row-gap: 5rem;
@@ -32,5 +34,13 @@ const Style = {
     display: flex;
     width: 100%;
     justify-content: ${(props) => props.flex || "flex-start"};
+  `,
+
+  ContentWrapper: styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 400px;
+    row-gap: 10px;
   `,
 };
