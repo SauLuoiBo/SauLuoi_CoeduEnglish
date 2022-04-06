@@ -31,7 +31,13 @@ export const FeedbackSection = () => {
           <SwiperSlide>Slide 4</SwiperSlide>
         </Swiper>
       </Style.Content>
-      
+      <Sui.Text.Title.Head style={{ color: "#FFD600" }}>
+        ĐỂ LẠI THÔNG TIN ĐỂ NHẬN TƯ VẪN
+      </Sui.Text.Title.Head>
+      <Style.AdviseWrapper>
+        <Sui.Input.Advise placeholder={"Tên phụ huynh"} />
+        <Sui.Input.Advise placeholder={"Số điện thoại"} />
+      </Style.AdviseWrapper>
     </Style.Wrapper>
   );
 };
@@ -41,6 +47,7 @@ const Style = {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 100px;
     background: linear-gradient(
@@ -61,5 +68,16 @@ const Style = {
     justify-content: center;
     width: 100%;
     margin: 20px 0;
+  `,
+  AdviseWrapper: styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+    column-gap: 50px;
+    row-gap: 10px;
+    @media ${(props) => props.theme.breakpoints.md} {
+      flex-direction: column;
+    }
   `,
 };
