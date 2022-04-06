@@ -84,7 +84,7 @@ const Style = {
     width: 100%;
     grid-template-columns: 50% 50%;
     grid-gap: 20px;
-    @media ${(props) => props.theme.breakpoints.md} {
+    @media ${(props) => props.theme.breakpoints.xs} {
       grid-template-columns: 100%;
     }
   `,
