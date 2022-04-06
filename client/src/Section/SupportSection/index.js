@@ -9,13 +9,13 @@ export const SupportSection = () => {
     <Sui.View.ViewSection title={"Coedu english hỗ trợ gì?"}>
       <Style.Wrapper>
         <Style.ImgWrapper>
-          {/* <motion.div
+          <motion.div
             initial={{ rotate: -20, x: 0, y: -60 }}
             animate={{ rotate: 20, x: [0, 20, 200, 20, 0] }}
             transition={{ duration: 3, times: [0, 0.2, 1], yoyo: Infinity }}
-          > */}
-          <Style.Img src={getImage.getPng("fly")} />
-          {/* </motion.div> */}
+          >
+            <Style.Img src={getImage.getPng("fly")} />
+          </motion.div>
         </Style.ImgWrapper>
         <Style.ContentWrapper>
           <Sui.Card.Support text={"Môi trường học tập 100% tiếng Anh"} />

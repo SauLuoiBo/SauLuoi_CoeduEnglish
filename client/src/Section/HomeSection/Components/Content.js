@@ -1,3 +1,4 @@
+import { width } from "@mui/system";
 import React from "react";
 import styled from "styled-components";
 import * as Co from "../../../components";
@@ -13,7 +14,8 @@ export const Content = () => {
         Coedu English cung cấp dịch vụ gia sư online 1: 1, 1: 2 hoặc nhóm nhỏ,
         giảng dạy ngoại ngữ cho trẻ từ 4 đến 12 tuổi{" "}
       </Co.Text.Normal.Medium>
-      <Style.ButtonWrapper>dasads</Style.ButtonWrapper>
+
+      <Co.Button.PricingButton.Join />
     </Style.Wrapper>
   );
 };

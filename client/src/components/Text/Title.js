@@ -9,6 +9,15 @@ export const Title = {
     font-size: 20px;
     color: var(--color-title);
   `,
+
+  Medium: styled.h5`
+    font-weight: 600;
+    line-height: 119%;
+
+    letter-spacing: -0.05em;
+    font-size: 16px;
+    color: var(--color-title);
+  `,
   Title: styled.h2`
     text-transform: uppercase;
     font-weight: 800;
