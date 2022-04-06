@@ -19,6 +19,8 @@ export default function Home() {
         <Section.CandelaSection />
         <Section.CourseSection />
         <Section.SupportSection />
+        <Section.FeedbackSection />
+        <Section.Footer />
       </main>
     </>
   );

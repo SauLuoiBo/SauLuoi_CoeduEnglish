@@ -5,6 +5,8 @@ import { ContentSection } from "./ContentSection";
 import { TeacherSection } from "./TeacherSection";
 import { CourseSection } from "./CourseSection";
 import { SupportSection } from "./SupportSection";
+import { FeedbackSection } from "./FeedbackSection";
+import { Footer } from "./Footer";
 
 export {
   Header,
@@ -14,4 +16,6 @@ export {
   CandelaSection,
   CourseSection,
   SupportSection,
+  FeedbackSection,
+  Footer,
 };

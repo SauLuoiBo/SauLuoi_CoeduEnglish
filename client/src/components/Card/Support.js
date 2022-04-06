@@ -2,12 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import * as Sui from "..";
 
-export const Support = () => {
+export const Support = ({ text }) => {
   return (
     <Style.Wrapper>
-      <Sui.Text.Normal.MediumBody>
-        Môi trường học tập 100% tiếng Anh
-      </Sui.Text.Normal.MediumBody>
+      <Sui.Text.Normal.MediumBody>{text}</Sui.Text.Normal.MediumBody>
     </Style.Wrapper>
   );
 };
