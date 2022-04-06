@@ -35,7 +35,6 @@ const Style = {
     position: relative;
     display: flex;
     flex-direction: row;
-
     justify-content: flex-end;
     align-items: flex-start;
     column-gap: 30rem;

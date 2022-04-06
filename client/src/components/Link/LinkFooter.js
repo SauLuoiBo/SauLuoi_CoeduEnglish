@@ -13,10 +13,9 @@ export const LinkFooter = ({ to, name }) => {
 
 const Style = {
   Text: styled(Text.Title.Head)`
-    color: red;
     cursor: pointer;
     :hover {
-      color: violet;
+      color: var(--color-primary);
     }
   `,
 };

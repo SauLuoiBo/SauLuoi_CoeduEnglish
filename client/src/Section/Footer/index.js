@@ -6,44 +6,50 @@ import * as data from "./data";
 
 export const Footer = () => {
   return (
-    <Style.Wrapper className="container">
-      <Style.Inner>
-        <Sui.Text.Title.Head>Liên hệ với chúng tôi</Sui.Text.Title.Head>
-        <Style.SocialWrapper>
-          <Sui.Icon.Social src={getImage.getPng("fb")} alt={"fb"} />
-          <Sui.Icon.Social src={getImage.getPng("gmail")} alt={"gmail"} />
-          <Sui.Icon.Social src={getImage.getPng("zalo")} alt={"zalo"} />
-        </Style.SocialWrapper>
-        <Style.FooterWrapper>
-          <Style.FlexColumn>
-            {data.infor.map((item, i) => {
-              return (
-                <Sui.Infor.Footer name={item.name}>
-                  {item.chil}
-                </Sui.Infor.Footer>
-              );
-            })}
-          </Style.FlexColumn>
-          <Style.PolicyWrapper>
+    <>
+      <Style.Wrapper className="container">
+        <Style.Inner>
+          <Sui.Text.Title.Head>Liên hệ với chúng tôi</Sui.Text.Title.Head>
+          <Style.SocialWrapper>
+            <Sui.Icon.Social src={getImage.getPng("fb")} alt={"fb"} />
+            <Sui.Icon.Social src={getImage.getPng("gmail")} alt={"gmail"} />
+            <Sui.Icon.Social src={getImage.getPng("zalo")} alt={"zalo"} />
+          </Style.SocialWrapper>
+          <Style.FooterWrapper>
             <Style.FlexColumn>
-              {data.policy.map((item, i) => {
+              {data.infor.map((item, i) => {
                 return (
-                  <Sui.Link.LinkFooter key={i} name={item.name} to={item.to} />
+                  <Sui.Infor.Footer name={item.name}>
+                    {item.chil}
+                  </Sui.Infor.Footer>
                 );
               })}
             </Style.FlexColumn>
-            <Sui.Icon.Logo src={getImage.getPng("LogoHome")} alt={"logo"} />
-          </Style.PolicyWrapper>
-        </Style.FooterWrapper>
-      </Style.Inner>
-    </Style.Wrapper>
+            <Style.PolicyWrapper>
+              <Style.FlexColumn>
+                {data.policy.map((item, i) => {
+                  return (
+                    <Sui.Link.LinkFooter
+                      key={i}
+                      name={item.name}
+                      to={item.to}
+                    />
+                  );
+                })}
+              </Style.FlexColumn>
+              <Sui.Icon.Logo src={getImage.getPng("LogoHome")} alt={"logo"} />
+            </Style.PolicyWrapper>
+          </Style.FooterWrapper>
+        </Style.Inner>
+      </Style.Wrapper>
+      
+    </>
   );
 };
 
 const Style = {
   Wrapper: styled.footer`
     display: block;
-
     background: #fefb00;
   `,
 

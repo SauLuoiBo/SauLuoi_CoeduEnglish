@@ -2,16 +2,16 @@ import * as Sui from "../../components";
 
 export const policy = [
   {
-    name: "Chinhs sacsh baor matja",
-    to: "/policy",
+    name: "Chính sách bảo mật",
+    to: "/",
   },
   {
     name: "Chính sách thanh toán",
-    to: "/pay",
+    to: "/",
   },
   {
     name: "Hỗ trợ",
-    to: "/support",
+    to: "/",
   },
 ];
 
