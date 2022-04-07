@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import * as Sui from "../../components";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { EffectFade, Pagination, Autoplay } from "swiper";
+import "swiper/css/effect-fade";
 export const TeacherSection = () => {
   return (
     <Sui.View.ViewSection title={"Giao vien Kinh nghiem"} id="teacher">
@@ -41,10 +44,75 @@ export const TeacherSection = () => {
           />
         </Style.Card>
         <Style.Teacher>
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={"auto"}
+            centeredSiles={true}
+            pagination={true}
+            grabCursor={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+              1340: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            }}
+            style={{
+              padding: "5px 0",
+            }}
+          >
+            <SwiperSlide
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Sui.Card.Teacher />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Sui.Card.Teacher />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Sui.Card.Teacher />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Sui.Card.Teacher />
+            </SwiperSlide>
+          </Swiper>
+          {/* <Sui.Card.Teacher />
           <Sui.Card.Teacher />
           <Sui.Card.Teacher />
-          <Sui.Card.Teacher />
-          <Sui.Card.Teacher />
+          <Sui.Card.Teacher /> */}
         </Style.Teacher>
       </Style.Wrapper>
     </Sui.View.ViewSection>

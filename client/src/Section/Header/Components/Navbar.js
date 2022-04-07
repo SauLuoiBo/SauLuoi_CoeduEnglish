@@ -16,7 +16,7 @@ export const Navbar = () => {
             duration={500}
             spy={true}
             smooth={true}
-            offset={-120}
+            offset={-60}
           >
             {item.name}
           </Style.LinkS>

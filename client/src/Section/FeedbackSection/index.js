@@ -16,7 +16,7 @@ export const FeedbackSection = () => {
       <Style.Content>
         <Swiper
           spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={"auto"}
           centeredSiles={true}
           pagination={true}
           grabCursor={true}
@@ -24,11 +24,60 @@ export const FeedbackSection = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
+            1340: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+          }}
+          style={{
+            padding: "5px 0",
+          }}
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide
+            style={{
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <Sui.Card.Feedback />
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <Sui.Card.Feedback />
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <Sui.Card.Feedback />
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <Sui.Card.Feedback />
+          </SwiperSlide>
         </Swiper>
       </Style.Content>
       <Sui.Text.Title.Head style={{ color: "#FFD600" }}>
