@@ -19,6 +19,10 @@ const Style = {
     padding-left: 20px;
     height: 4rem;
     min-width: 300px;
+    :focus-within {
+      background: hsl(199deg, 65%, 73%);
+      transform: translateY(-4px) scale(1.05);
+    }
   `,
   Input: styled.input`
     background-color: transparent;
