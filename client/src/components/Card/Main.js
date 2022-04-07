@@ -34,6 +34,7 @@ const Style = {
     gap: 1rem;
     align-items: flex-start;
     width: ${(props) => props.w || "300px"};
+    max-width: ${(props) => props.mw || "100%"};
     max-width: 100%;
     background: linear-gradient(0deg, #fefb00 -98.15%, #ffffff 156.48%);
     box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);

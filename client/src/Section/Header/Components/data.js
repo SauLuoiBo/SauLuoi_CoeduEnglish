@@ -4,4 +4,5 @@ export const nav = [
   { name: "Giáo viên", id: "teacher" },
   { name: "Lịch học", id: "candela" },
   { name: "Đăng ký", id: "pricing" },
+  { name: "Hỗ trợ", id: "support" },
 ];

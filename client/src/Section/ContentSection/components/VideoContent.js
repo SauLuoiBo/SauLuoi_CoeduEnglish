@@ -22,5 +22,6 @@ const Style = {
     display: flex;
     width: 100%;
     justify-content: center;
+    padding-top: 20rem;
   `,
 };

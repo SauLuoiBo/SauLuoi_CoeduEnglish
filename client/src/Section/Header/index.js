@@ -1,13 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import * as Co from "./Components";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Slide from "@mui/material/Slide";
+import * as Hook from "../../hook";
+
+function HideOnScroll(props) {
+  const { children, window } = props;
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
 
 export const Header = () => {
+  const scrollPosition = Hook.useScrollPostion();
   return (
-    <Style.Wrapper className="container">
-      <Co.Logo />
-      <Co.Navbar />
-    </Style.Wrapper>
+    <HideOnScroll>
+      <Style.Wrapper className="container" c={scrollPosition > 200}>
+        <Co.Logo />
+        <Co.Navbar />
+      </Style.Wrapper>
+    </HideOnScroll>
   );
 };
 
@@ -21,8 +39,8 @@ const Style = {
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 20px 0;
+
     z-index: 1000;
-    /* background: #fefb00; */
+    background: ${(props) => (props.c ? "#fefb00" : "none")};
   `,
 };

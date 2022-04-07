@@ -2,24 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import * as Sui from "..";
 
-export const Course = () => {
+export const Course = ({ number, pricing, time, content }) => {
   return (
     <Style.Wrapper>
       <Style.HeadWrapper>
         <Style.NameCourse>
           <Sui.Text.Title.CaptionBody>PHONICS</Sui.Text.Title.CaptionBody>
-          <Sui.Text.Title.CaptionBody>1</Sui.Text.Title.CaptionBody>
+          <Sui.Text.Title.CaptionBody>{number}</Sui.Text.Title.CaptionBody>
         </Style.NameCourse>
         <Style.PricingWrapper>
-          <Style.TextPricing>1.490K</Style.TextPricing>
+          <Style.TextPricing>{pricing}</Style.TextPricing>
         </Style.PricingWrapper>
       </Style.HeadWrapper>
       <Sui.Text.Normal.MediumBody>
-        Thời lượng: 1 tháng /8 buổi
+        Thời lượng: {time}
       </Sui.Text.Normal.MediumBody>
-      <Sui.Text.Normal.Medium>
-        Học 6 chữ cái, 25 từ vựng 5-7 câu lệnh khác nhau.
-      </Sui.Text.Normal.Medium>
+      <Sui.Text.Normal.Medium>{content}</Sui.Text.Normal.Medium>
       <Style.ButtonWrapper>
         <Sui.Button.PricingButton onClick={() => console.log("click")} />
       </Style.ButtonWrapper>

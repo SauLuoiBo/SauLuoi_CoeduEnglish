@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-
+import * as Section from "../Section";
 export const HomeLayout = ({ children }) => {
-  return <Style.Wrapper>{children}</Style.Wrapper>;
+  return (
+    <Style.Wrapper>
+      <Section.Header />
+      <Style.Main>{children}</Style.Main>
+      <Section.Footer />
+    </Style.Wrapper>
+  );
 };
 
 const Style = {
@@ -15,5 +21,9 @@ const Style = {
       #ffe175 67.57%,
       #faec87 97.2%
     );
+  `,
+
+  Main: styled.main`
+    overflow-x: hidden;
   `,
 };

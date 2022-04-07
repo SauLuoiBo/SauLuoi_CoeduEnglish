@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Text } from "..";
 
-export const ViewSection = ({ title, children }) => {
+export const ViewSection = ({ title, children, ...rest }) => {
   return (
-    <Style.Wrapper className="container">
+    <Style.Wrapper className="container" {...rest}>
       <Style.Title>
         <Text.Title.Title>{title || "title"}</Text.Title.Title>
       </Style.Title>

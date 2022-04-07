@@ -4,7 +4,7 @@ import * as Co from "./Components";
 
 export const HomeSection = () => {
   return (
-    <Style.Wrapper>
+    <Style.Wrapper id="home">
       <Style.Inner className="container">
         <Co.Content />
         <Co.ImageContent />

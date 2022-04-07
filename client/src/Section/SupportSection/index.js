@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export const SupportSection = () => {
   return (
-    <Sui.View.ViewSection title={"Coedu english hỗ trợ gì?"}>
+    <Sui.View.ViewSection title={"Coedu english hỗ trợ gì?"} id={"support"}>
       <Style.Wrapper>
         <Style.ImgWrapper>
           <motion.div
