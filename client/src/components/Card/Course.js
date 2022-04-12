@@ -19,7 +19,7 @@ export const Course = ({ number, pricing, time, content }) => {
       </Sui.Text.Normal.MediumBody>
       <Sui.Text.Normal.Medium>{content}</Sui.Text.Normal.Medium>
       <Style.ButtonWrapper>
-        <Sui.Button.PricingButton onClick={() => console.log("click")} />
+        {/* <Sui.Button.PricingButton onClick={() => console.log("click")} /> */}
       </Style.ButtonWrapper>
     </Style.Wrapper>
   );

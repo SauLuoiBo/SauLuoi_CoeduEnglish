@@ -1,4 +1,3 @@
-import { width } from "@mui/system";
 import React from "react";
 import styled from "styled-components";
 import * as Co from "../../../components";
@@ -15,7 +14,7 @@ export const Content = () => {
         giảng dạy ngoại ngữ cho trẻ từ 4 đến 12 tuổi{" "}
       </Co.Text.Normal.Medium>
 
-      <Co.Button.PricingButton.Join />
+      {/* <Co.Button.PricingButton.Join /> */}
     </Style.Wrapper>
   );
 };

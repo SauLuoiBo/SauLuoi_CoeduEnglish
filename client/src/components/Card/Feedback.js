@@ -10,7 +10,7 @@ export const Feedback = () => {
       <Style.ContentWrapper>
         <Sui.Text.Title.Head>Chi Nga</Sui.Text.Title.Head>
         <Sui.Text.Normal.Medium style={{ color: "yellow" }}>
-          adsasda adsdas{" "}
+          adsasda adsdas
         </Sui.Text.Normal.Medium>
       </Style.ContentWrapper>
     </Style.Wrapper>

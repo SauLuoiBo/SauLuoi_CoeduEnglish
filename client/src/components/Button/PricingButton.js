@@ -6,7 +6,7 @@ export const PricingButton = ({ name, ...rest }) => {
     <Style.Wrapper {...rest}>
       <Sui.Text.Normal.MediumBody>
         {name || "Đăng ký"}
-      </Sui.Text.Normal.MediumBody>{" "}
+      </Sui.Text.Normal.MediumBody>
     </Style.Wrapper>
   );
 };
@@ -16,7 +16,7 @@ PricingButton.Join = function Join({ name, ...rest }) {
     <Style.Wrapper2 {...rest}>
       <Sui.Text.Normal.MediumBody style={{ color: "white" }}>
         {name || "Đăng ký"}
-      </Sui.Text.Normal.MediumBody>{" "}
+      </Sui.Text.Normal.MediumBody>
     </Style.Wrapper2>
   );
 };
