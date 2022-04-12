@@ -348,6 +348,15 @@
     "@emotion/cache" "^11.7.1"
     prop-types "^15.7.2"
 
+"@mui/styled-engine@^5.6.1":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@mui/styled-engine/-/styled-engine-5.6.1.tgz#e2c859a4dbdd65af89e77703a0725285aef471fd"
+  integrity sha512-jEhH6TBY8jc9S8yVncXmoTYTbATjEu44RMFXj6sIYfKr5NArVwTwRo3JexLL0t3BOAiYM4xsFLgfKEIvB9SAeQ==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@emotion/cache" "^11.7.1"
+    prop-types "^15.7.2"
+
 "@mui/styles@^5.6.0":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@mui/styles/-/styles-5.6.0.tgz#c57b80974ca31c980acdd58d13b21d46fbcd81cf"
