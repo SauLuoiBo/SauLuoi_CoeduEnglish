@@ -11,7 +11,7 @@ export const PricingButton = ({ name, ...rest }) => {
   );
 };
 
-PricingButton.Join = function ({ name, ...rest }) {
+PricingButton.Join = function Join({ name, ...rest }) {
   return (
     <Style.Wrapper2 {...rest}>
       <Sui.Text.Normal.MediumBody style={{ color: "white" }}>
